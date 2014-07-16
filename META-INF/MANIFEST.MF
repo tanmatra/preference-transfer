@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Preferences Transfers
+Bundle-SymbolicName: com.github.tanmatra.prefstransfer;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Roman Dawydkin
+Require-Bundle: org.eclipse.ui

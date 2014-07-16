@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.preferenceTransfer">
+      <transfer
+            icon="icons/jperspective.gif"
+            id="com.github.tanmatra.prefstransfer.javaSyntaxColoring"
+            name="Java Editor Syntax Coloring">
+         <description>
+            Java &gt; Editor &gt; Syntax coloring
+         </description>
+         <mapping
+               scope="instance">
+            <entry
+                  node="org.eclipse.jdt.ui">
+               <key
+                     match="prefix"
+                     name="java_">
+               </key>
+               <key
+                     match="prefix"
+                     name="semanticHighlighting.">
+               </key>
+            </entry>
+         </mapping>
+      </transfer>
+      <transfer
+            icon="icons/jperspective.gif"
+            id="com.github.tanmatra.prefstransfer.propertiesSyntaxColoring"
+            name="Properties Files Editor Syntax Coloring">
+         <description>
+            Java &gt; Properties Files Editor
+         </description>
+         <mapping
+               scope="instance">
+            <entry
+                  node="org.eclipse.jdt.ui">
+               <key
+                     match="prefix"
+                     name="pf_coloring_">
+               </key>
+            </entry>
+         </mapping>
+      </transfer>
+   </extension>
+</plugin>
